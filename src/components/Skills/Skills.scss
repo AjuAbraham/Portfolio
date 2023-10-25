@@ -1,0 +1,100 @@
+@import '../../App.scss';
+.Skills{
+    max-width: 1366px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    @include mobile{
+        gap: 10px;
+     }
+    background-color: linear-graident(180,rgb(138, 122, 122),black)
+}
+.textContainer{
+    margin: 40px;
+    color: white;
+    h3{
+        font-size: 60px;
+        line-height: 7rem;
+        @include mobile{
+            font-size: 25px;
+            
+         }
+    }
+    p{
+        font-size: 20px;
+        @include mobile{
+            font-size: 15px;
+         }
+
+        color: rgb(150, 148, 148);
+    }
+}
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    width: 100%;
+    height: 100%;
+
+    @include mobile{
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        flex-wrap:wrap;
+        width: 100%;
+        height: 20%;
+     }
+}
+.Card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 160px;
+    @include mobile{
+        width: 100px;
+        height: 80px;
+     }
+    transition: ease-in-out 1s;
+    background: black;
+    position: relative;
+    .logo{
+        width: 30%;
+        height: 30%;
+        @include mobile{
+            width: 20%;
+            height: 20%;
+         }
+    }
+    p{
+        margin-top: 14px;
+        font-weight: bold;
+        color: white;
+    }
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.3);
+    }
+}
+.Card::before,.Card::after{
+    content: "";
+    position: absolute;
+    inset: -0.1rem;
+    z-index: -1;
+    border-radius: inherit;
+    background: linear-gradient(0deg,orange,rgb(169, 112, 6),rgb(82, 54, 2));
+}
+
+
+.Card::after{
+    filter: blur(0.5rem);
+}
+.html,.css,.js,.reactjs, .sass{
+     color: white;
+}
+ 
