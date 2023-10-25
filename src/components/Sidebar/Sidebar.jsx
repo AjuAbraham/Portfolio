@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import {motion} from 'framer-motion';
 import './Sidebar.scss'
 import Link from './links/Link'
-import ToggleButton from './ToogleButton/ToggleButton'
+import ToggleButton from './Toogle/Togglebutton'
 const variants ={
   open: {
     clipPath: "circle(1200px at 50px 50px)",
