@@ -2,15 +2,24 @@ import React from 'react'
 import '../Projects/project.scss';
 import {motion,useScroll,useSpring, useTransform} from 'framer-motion';
 import { useRef } from 'react';
-const items=[{
-  id:1,
+const items=[
+  {
+    id:1,
+    title: 'Note Maker',
+    img: "\Note.PNG",
+    desc:"NoteMaker is a comprehensive note-making application designed to streamline your productivity and organization. With its intuitive interface and robust features, NoteStack empowers users to capture, organize, and access their notes seamlessly across devices",
+    link:"https://note-maker-ten.vercel.app/",
+  },
+  
+  {
+  id:2,
   title: 'Crypto App',
   img: "\crypto.PNG",
   desc:"Crypto Currency App with Reactjs which tracks market value of any crypto Currency using coinGeko API",
   link:"https://crypto-app-git-main-ajus-projects.vercel.app",
 },
 {
-id:2,
+id:3,
 title: 'Todo',
 img: "\Todo.png",
 desc:"A todo website with React.js that allow to track all the activites we would follow thorught the day.",
@@ -18,7 +27,7 @@ link:"https://todo-6xyocbfty-ajus-projects.vercel.app",
 
 },
 {
-id:3,
+id:4,
 title: 'Currency Converter',
 img: "\currencyConverter.PNG",
 desc:"The currency Converter with react helps to determine the Global rates of any currency",

@@ -1,6 +1,8 @@
-import React from 'react'
+
 import './Skills.scss'
-import { FaHtml5,FaCss3,FaReact,FaSass,} from 'react-icons/fa';
+import { FaHtml5,FaCss3,FaReact,FaSass,FaNode} from 'react-icons/fa';
+import { DiMongodb } from "react-icons/di";
+import { SiExpress,SiTypescript } from "react-icons/si";
 import { IoLogoJavascript, } from "react-icons/io";
 const cards =[
 
@@ -29,6 +31,26 @@ const cards =[
     title:"Sass",
     img:<FaSass className='logo sass'/>,
   },
+  {
+    id:6,
+    title:"Express",
+    img:<SiExpress className='logo sass'/>,
+  },
+  {
+    id:7,
+    title:"MongoDb",
+    img:<DiMongodb className='logo sass'/>,
+  },
+  {
+    id:8,
+    title:"Node js",
+    img:<FaNode className='logo sass'/>,
+  },
+  {
+    id:9,
+    title:"Typescript",
+    img:<SiTypescript className='logo sass'/>,
+  }
 ];
 const Skills = () => {
   return (
