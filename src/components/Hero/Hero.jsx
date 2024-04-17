@@ -1,5 +1,4 @@
-import React from 'react'
-import {motion} from 'framer-motion'
+
 import '../Hero/Hero.scss';
 import Typewriter from 'typewriter-effect'
 
@@ -18,13 +17,13 @@ const Hero = () => {
             cursor:"",    
             wrapperClassName:"typewriter",}}/>
         <div className="button">
-            <button className='resume'>Resume</button >
+            <a className='resume' href="https://docs.google.com/document/d/1q0PIJzMmrt-0ste3yaUh2TcQpdZgQlYTZQNm8qh7C1I/edit?usp=sharing">Resume</a>
             <button className='contactme'> <a href="#Contact">Contact Me</a> </button>
         </div>
        </div>
        </div>
        <div className="imageContainer">
-        <img className='heroImg' src="del.jpg" alt="" />
+        <img className='heroImg' src="profile.jpg" alt="" />
        </div>
        
     </div>
