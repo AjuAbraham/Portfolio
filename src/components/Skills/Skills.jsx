@@ -4,6 +4,7 @@ import { FaHtml5,FaCss3,FaReact,FaSass,FaNode} from 'react-icons/fa';
 import { DiMongodb } from "react-icons/di";
 import { SiExpress,SiTypescript } from "react-icons/si";
 import { IoLogoJavascript, } from "react-icons/io";
+import { TbBrandNextjs } from "react-icons/tb";
 const cards =[
 
   {
@@ -50,6 +51,11 @@ const cards =[
     id:9,
     title:"Typescript",
     img:<SiTypescript className='logo sass'/>,
+  },
+  {
+    id:10,
+    title: "Nextjs",
+    img: <TbBrandNextjs className='logo sass'/>,
   }
 ];
 const Skills = () => {
